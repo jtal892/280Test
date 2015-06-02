@@ -1,0 +1,74 @@
+<!DOCTYPE>
+<html>
+<head>
+
+</head>
+<body>
+<a href="index.html">Home</a>
+<a href="https://www.google.co.nz/">Google</a>
+<a href="http://www.w3schools.com/">W3School</a>
+<a href="myAnswer.html">MyAnswer</a>
+
+<p>Calculation:</p>
+	<p><input value="1" id="firstNumber" />
+	*
+	<input value="2" id="secondNumber">
+	>
+	<input value="3" id="thirdnumber">
+	<span id="result"></span>
+	</p>
+	<p><input type="button" value="Plus" onclick="plus()"></p>
+	
+	<p><input value="3" id="multi1">
+	*
+	<input value="4" id="multi2">
+	=
+	<span id="multiresult"></span>
+	<p><input type="button" value="Multi!" onclick="multi()"></p>
+	</p>
+	
+	<script>
+		var firstnumber=document.getElementById("firstNumber").value;
+		var secondnumber=document.getElementById("secondNumber").value;
+		//alert(firstnumber+" "+secondnumber);
+		var result=eval(firstnumber+"+"+secondnumber);
+		//alert(result);
+		document.getElementById("result").innerHTML=result;
+		
+		var multinumber1=document.getElementById("multi1").value;
+		var multinumber2=document.getElementById("multi2").value;
+		//alert(multinumber1+" "+multinumber2);
+		var multiresult=0;
+		for(var i=0;i<multinumber2;i=i+1)
+		{
+			multiresult=eval(multiresult+"+"+multinumber1);
+		}
+		document.getElementById("multiresult").innerHTML=multiresult;
+	
+		function plus(){
+		var firstnumber=document.getElementById("firstNumber").value;
+		var secondnumber=document.getElementById("secondNumber").value;
+		//alert(firstnumber+" "+secondnumber);
+		var result=eval(firstnumber+"+"+secondnumber);
+		//alert(result);
+		document.getElementById("result").innerHTML=result;
+		}
+		
+		function multi(){
+		var multinumber1=document.getElementById("multi1").value;
+		var multinumber2=document.getElementById("multi2").value;
+		//alert(multinumber1+" "+multinumber2);
+		var multiresult=0;
+		for(var i=0;i<multinumber2;i=i+1)
+		{
+			multiresult=eval(multiresult+"+"+multinumber1);
+		}
+		document.getElementById("multiresult").innerHTML=multiresult;
+		}
+	
+	
+	</script>
+</body>
+</html>
+
+LINK TO GITHUB REPOSITORy

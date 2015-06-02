@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 2</title>
+	<link rel="style" type="text/css" href="\\comstu.com.auckland.ac.nz\users$\jtal892\Desktop\style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+	</script>
+	<script src="javascript.js"></script>
+	
+  </head>
+  <body>
+    <div id="box">
+	
+		<a href="">
+		<div id="logo1">
+			<img src="\\comstu.com.auckland.ac.nz\users$\jtal892\Desktop\images\turnon.png" onclick="changeImage()" width="250" height="130" alt="Picture Not Avaliable">
+		</div>
+		</a>
+		
+      <div id="logo2"> 
+			<img src="\\comstu.com.auckland.ac.nz\users$\jtal892\Desktop\images\turnon.png" onclick="changeImage()" width="250" height="130" alt="Picture Not Avaliable">
+      </div>
+	  
+	  <h1>Infosys 280<br />Assignment 2<br /></h1>
+	  <p class="callout">Good luck for your assignment 2</p>
+      <nav id="mainnav">
+        <ul>
+          <li><a href="myAnswer.html">Home</a></li>
+          <li><a href="myAnswer.html">Google</a></li> 
+          <li><a href="myAnswer.html">W3School</a></li>
+          <li><a href="myAnswer.html">My Answer</a></li>
+        </ul>
+      </nav>
+		<div id="upcom">
+        <h2>Buttons</h2>
+          <p><input type="button" id="button1" value="Question 6(a)"></p>
+			<script>
+				function changeImage() {
+					var image = document.getElementById('logo1');
+					if (image.src.match("turnon")) {
+						image.src = "turnoff.png";
+					} else {
+						image.src = "turnoff.png";
+					}
+				}
+				</script>
+			<script>
+				function changeImage() {
+					var image = document.getElementById('logo2');
+					if (image.src.match("turnon")) {
+						image.src = "turnoff.png";
+					} else {
+						image.src = "turnoff.png";
+					}
+				}
+			</script>
+			
+	<p><input type="button" id="button2" value="Question 6(b)"></p>
+		  
+			<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("button").css("color", "green");
+				});
+			});
+			</script>
+			
+			<button>button</button>
+			
+			<script>
+			
+			$(document).ready(function(){
+				$("button2").click(function(){
+					$("button2").css("color", "blue");
+				});
+			});
+			</script>
+			
+			<button>Button2</button>
+			
+			<script>
+			
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("button").css("color", "blue");
+				});
+			});
+			</script>
+			
+			<button>Button2</button>
+	
+		  <p><input type="button" id="button3" value="Question 6(c)"></p>
+        </div>	
+    </div>
+  </body>
+</html>
